@@ -4,7 +4,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col w-full min-h-screen p-12 md:justify-center">
+    <div className="flex flex-col w-full min-h-screen p-12 justify-center md:items-center">
+      <div className="grow"></div>
       <div className="">
         <div className="flex gap-x-4 my-2">
           <Image
@@ -38,10 +39,11 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="absolute w-full bottom-8 left-0 flex justify-center">
+      <div className="grow"></div>
+      <div className="w-full flex justify-center my-2">
         <a
           href="#experience"
-          className="animate-bounce border border-white/50 rounded-full p-2"
+          className="border border-white/50 rounded-full p-2"
         >
           <FaArrowDown></FaArrowDown>
         </a>
