@@ -3,7 +3,7 @@ import Position from "./Position";
 export default function Experience() {
     return (
         <div id='experience' className='w-full px-8 mb-8'>
-            <h1 className='text-2xl py-2 font-bold'>Experience</h1>
+            <h1 className='text-2xl font-bold'>Experience</h1>
             <Position company='DPG Media' title='Java / Kotlin Developer' startDate='November 2023' endDate='Now' >
                 Individual contributor of the DPG Selectives platform.
             </Position>

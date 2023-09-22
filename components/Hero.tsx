@@ -18,16 +18,15 @@ export default function Hero() {
                 Having dabbled in data science and speech technology during my studies, I am now fully commited to the art and science of software engineering.
             </p>
             <div className='flex gap-2 my-2'>
-                <a href='https://www.linkedin.com/in/mlrprananta/'><FaLinkedin /></a>
-                <a href='https://github.com/mlrprananta'><FaGithub /></a>
+                <a href='https://www.linkedin.com/in/mlrprananta/'><FaLinkedin size={24}/></a>
+                <a href='https://github.com/mlrprananta'><FaGithub size={24} /></a>
             </div>
-      
+
         </div>
-        <div className="mt-20 flex justify-center">
+        <div className="absolute w-full bottom-8 left-0 flex justify-center">
             <a href='#experience' className='animate-bounce border border-white/50 rounded-full p-2'>
                 <FaArrowDown></FaArrowDown>
             </a>
-                
-            </div>
+        </div>
     </div>)
 }
