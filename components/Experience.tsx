@@ -33,7 +33,9 @@ export default function Experience() {
         title="Intern"
         startDate="April 2018"
         endDate="July 2018"
-      > </Position>
+      >
+        {" "}
+      </Position>
     </div>
   );
 }

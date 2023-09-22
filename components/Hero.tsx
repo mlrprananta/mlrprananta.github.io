@@ -1,15 +1,17 @@
 import { FaLinkedin, FaGithub, FaArrowDown } from "react-icons/fa";
+import profilePicture from "@/public/pfp.jpeg";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <div className="flex flex-col w-full min-h-screen p-12 md:justify-center">
       <div className="">
         <div className="flex gap-x-4 my-2">
-          <img
-            className="aspect-square rounded-full h-24"
-            src="/pfp.jpeg"
-            alt=""
-          ></img>
+          <Image
+            className="rounded-full h-24 w-24"
+            src={profilePicture}
+            alt="Itsa me"
+          ></Image>
           <div className="flex flex-col justify-center">
             <h1 className="text-2xl md:text-4xl font-semibold">
               Luke Prananta
