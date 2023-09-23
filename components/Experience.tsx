@@ -1,3 +1,4 @@
+import Pill from "./Pill";
 import Position from "./Position";
 
 export default function Experience() {
@@ -11,6 +12,7 @@ export default function Experience() {
           startDate="Nov 2023"
           endDate="Present"
           url="https://www.dpgmediagroup.com/nl-NL"
+          skills={["Java", "Kotlin", "AWS"]}
         >
           Maintained the DPG Selectives platform, a digital news delivery
           platform powering dozens of mobile applications and websites.
@@ -21,6 +23,7 @@ export default function Experience() {
           startDate="Jan 2022"
           endDate="Oct 2023"
           url="https://picnic.app/nl/"
+          skills={["Java 17", "Spring Webflux", "MongoDB", "Kubernetes"]}
         >
           Developed new features end-to-end for the backend powering the
           customer-facing mobile app. Involved in all stages of the software
@@ -34,6 +37,14 @@ export default function Experience() {
           startDate="Dec 2019"
           endDate="Dec 2021"
           url="https://netcompany.com/"
+          skills={[
+            "TypeScript",
+            "React",
+            "Node.js",
+            "C#",
+            ".NET Core",
+            "Docker",
+          ]}
         >
           Designed and implemented frontend components and contributed to
           backend applications for ongoing projects commisioned by government
@@ -42,11 +53,12 @@ export default function Experience() {
           manual workload.
         </Position>
         <Position
-          company="Netherlands Aerospace Center"
+          company="NLR"
           title="Intern"
           startDate="Apr 2018"
           endDate="Jul 2018"
           url="https://www.nlr.nl/"
+          skills={["MATLAB"]}
         >
           Developed internal tooling to visualize the load paths on wings from
           recorded flight and sensor data.

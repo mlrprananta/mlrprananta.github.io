@@ -22,11 +22,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <p className="text-sm leading-relaxed text-white/60 py-1 md:max-w-lg">
+        <p className="text-sm leading-relaxed text-white/70 py-1 md:max-w-lg">
           Passionate software engineer specialized in backend development, with
           experience in e-commerce and customer-facing applications.
         </p>
-        <p className="text-sm leading-relaxed text-white/60 py-1 md:max-w-lg">
+        <p className="text-sm leading-relaxed text-white/70 py-1 md:max-w-lg">
           Having dabbled in data science and speech technology during my
           studies, I am now fully commited to the art and science of software
           engineering.
