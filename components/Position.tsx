@@ -13,7 +13,7 @@ interface Props {
 
 export default function Position(props: Props) {
   return (
-    <a href={props.url} className="group py-4 sm:grid sm:grid-cols-4">
+    <a href={props.url} className="group py-4 grid grid-cols-1 sm:grid-cols-4">
       <div className="col-span-1">
         <p className="text-xs/5 font-medium uppercase text-white/50 mr-2">
           <span className="inline-block">{props.startDate}</span> -{" "}
@@ -48,7 +48,7 @@ export default function Position(props: Props) {
         <div className="text-xs leading-relaxed text-white/70 my-2">
           {props.children}
         </div>
-        <div>
+        <div className="leading-loose">
           {props.skills.map((skill) => (
             <Pill key={skill} name={skill}></Pill>
           ))}

@@ -23,7 +23,7 @@ export default function Experience() {
           startDate="Jan 2022"
           endDate="Oct 2023"
           url="https://picnic.app/nl/"
-          skills={["Java 17", "Spring Webflux", "MongoDB", "Kubernetes"]}
+          skills={["Java 17", "Spring Webflux", "MongoDB", "Kubernetes", "Python"]}
         >
           Developed new features end-to-end for the backend powering the
           customer-facing mobile app. Involved in all stages of the software
