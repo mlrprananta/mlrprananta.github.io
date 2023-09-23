@@ -5,16 +5,47 @@ interface Props {
   title: string;
   startDate: string;
   endDate: string;
+  url: string;
   children: ReactNode;
 }
 
 export default function Position(props: Props) {
   return (
-    <div className="border rounded-xl border-white/50 border-t my-4 px-4 py-4">
-      <h3 className="text-sm">{props.title}</h3>
-      <h2 className="text-xl font-semibold">{props.company}</h2>
-      <p className="text-xs font-semibold opacity-50">{`${props.startDate} - ${props.endDate}`}</p>
-      <div className="text-sm opacity-50 my-2">{props.children}</div>
+    <div className="py-4 sm:grid sm:grid-cols-4 grid-flow-col-dense">
+      <div>
+        <p className="text-xs/6 font-medium uppercase text-white/50">{`${props.startDate} - ${props.endDate}`}</p>
+      </div>
+      <div className="col-span-3">
+        <a
+          href={props.url}
+          className="
+                inline-flex 
+                items-center 
+                text-sm 
+                font-medium 
+                transition
+                hover:text-blue-600"
+        >
+          {`${props.title} · ${props.company}`}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-4 h-4 ml-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
+          </svg>
+        </a>
+        {/* <h2 className="text-lg font-semibold">{props.company}</h2> */}
+        {/* <div className="text-sm text-white/50 my-2">{props.children}</div> */}
+        <div className="text-sm text-white/50 my-2">{props.children}</div>
+      </div>
     </div>
   );
 }
