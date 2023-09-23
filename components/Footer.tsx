@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="border-t border-white/10 w-full p-10 text-center text-xs text-white/50">
+    <footer className="p-10 w-full text-center text-xs text-white/50">
       Built with{" "}
       <a
         className="transition hover:text-blue-600 underline text-white"
@@ -16,6 +16,6 @@ export default function Footer() {
         Tailwind CSS
       </a>{" "}
       <span className="text-white">🚀</span>
-    </div>
+    </footer>
   );
 }

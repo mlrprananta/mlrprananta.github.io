@@ -5,7 +5,8 @@ export default function Main({ children }: { children: ReactNode }) {
     <main
       className="
     flex 
-    min-h-screen 
+    min-h-screen
+    mx-auto
     flex-col 
     items-center  
     dark:bg-slate-950"

@@ -2,9 +2,9 @@ import Position from "./Position";
 
 export default function Experience() {
   return (
-    <div
+    <section
       id="experience"
-      className="flex w-full px-6 md:px-0 mb-8 justify-center"
+      className="flex w-full p-6 mb-8 justify-center"
     >
       <div className="md:max-w-xl">
         <h1 className="text-xl font-semibold">Experience</h1>
@@ -23,11 +23,11 @@ export default function Experience() {
           endDate="Present"
           url="https://picnic.app/nl/"
         >
-          Developed new features for the backend powering the customer-facing
-          mobile app. Involved in all stages of the software development
-          lifecycle and contributed to several impactful projects. Day-to-day
-          responsibilities included the maintanenance, deployment and monitoring
-          of the main backend application behind the mobile app.
+          Developed new features end-to-end for the backend powering the
+          customer-facing mobile app. Involved in all stages of the software
+          development lifecycle and contributed to several impactful projects.
+          Day-to-day responsibilities included the maintenance, deployment and
+          monitoring of the main backend application behind the mobile app.
         </Position>
         <Position
           company="Netcompany"
@@ -37,10 +37,10 @@ export default function Experience() {
           url="https://netcompany.com/"
         >
           Designed and implemented frontend components and contributed to
-          backend applications for on-going web application projects commisioned
-          by government organisations. Developed internal tooling to synchronize
-          items between two issue tracking systems, streamlining the workflow
-          and reducing manual workload.
+          backend applications for ongoing projects commisioned by government
+          organisations. Developed internal tooling to synchronize items between
+          two issue tracking systems, streamlining the workflow and reducing
+          manual workload.
         </Position>
         <Position
           company="Netherlands Aerospace Center"
@@ -53,6 +53,6 @@ export default function Experience() {
           recorded flight and sensor data.
         </Position>
       </div>
-    </div>
+    </section>
   );
 }

@@ -4,8 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col w-full p-6 justify-center md:items-center mb-6">
-      <div className="h-14"></div>
+    <div className="lg:sticky lg:top-0 lg:max-h-screen pt-20 flex flex-col p-6 justify-center md:items-center">
       <div className="grow">
         <div className="flex items-center gap-x-4 my-2">
           <Image
@@ -23,11 +22,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <p className="text-sm text-white/50 py-1 md:max-w-xl">
+        <p className="text-sm text-white/50 py-1 md:max-w-lg">
           Passionate software engineer specialized in backend development, with
           experience in e-commerce and customer-facing applications.
         </p>
-        <p className="text-sm text-white/50 py-1 md:max-w-xl">
+        <p className="text-sm text-white/50 py-1 md:max-w-lg">
           Having dabbled in data science and speech technology during my
           studies, I am now fully commited to the art and science of software
           engineering.

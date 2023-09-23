@@ -13,7 +13,10 @@ export default function Position(props: Props) {
   return (
     <div className="py-4 sm:grid sm:grid-cols-4 grid-flow-col-dense">
       <div>
-        <p className="text-xs/6 font-medium uppercase text-white/50">{`${props.startDate} - ${props.endDate}`}</p>
+        <p className="text-xs/6 font-medium uppercase text-white/50 mr-2">
+          <span className="inline-block">{props.startDate}</span> -{" "}
+          <span className="inline-block">{props.endDate}</span>
+        </p>
       </div>
       <div className="col-span-3">
         <a
@@ -26,7 +29,7 @@ export default function Position(props: Props) {
                 transition
                 hover:text-blue-600"
         >
-          {`${props.title} · ${props.company}`}
+          {`${props.title} @ ${props.company}`}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
