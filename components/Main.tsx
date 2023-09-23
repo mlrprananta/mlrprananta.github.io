@@ -8,8 +8,7 @@ export default function Main({ children }: { children: ReactNode }) {
     min-h-screen
     mx-auto
     flex-col 
-    items-center  
-    dark:bg-slate-950"
+    items-center"
     >
       {children}
     </main>

@@ -2,25 +2,24 @@ import Position from "./Position";
 
 export default function Experience() {
   return (
-    <section
-      id="experience"
-      className="flex w-full p-6 mb-8 justify-center"
-    >
+    <section id="experience" className="flex w-full p-6 mb-8 justify-center">
       <div className="md:max-w-xl">
-        <h1 className="text-xl font-semibold">Experience</h1>
-        {/* <Position
-        company="DPG Media"
-        title="Java / Kotlin Developer"
-        startDate="Nov 2023"
-        endDate="Present"
-      >
-        Developed new features for the DPG Selectives platform, a digital news delivery platform powering dozens of mobile applications and websites.
-      </Position> */}
+        <h1 className="text-xl text-white/90 font-semibold">Experience</h1>
+        <Position
+          company="DPG Media"
+          title="Java / Kotlin Developer"
+          startDate="Nov 2023"
+          endDate="Present"
+          url="https://www.dpgmediagroup.com/nl-NL"
+        >
+          Maintained the DPG Selectives platform, a digital news delivery
+          platform powering dozens of mobile applications and websites.
+        </Position>
         <Position
           company="Picnic Technologies"
           title="Java Developer"
           startDate="Jan 2022"
-          endDate="Present"
+          endDate="Oct 2023"
           url="https://picnic.app/nl/"
         >
           Developed new features end-to-end for the backend powering the

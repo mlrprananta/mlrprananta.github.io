@@ -22,21 +22,22 @@ export default function Position(props: Props) {
         <a
           href={props.url}
           className="
-                inline-flex 
                 items-center 
                 text-sm 
+                text-white/90
                 font-medium 
                 transition
                 hover:text-blue-600"
         >
           {`${props.title} @ ${props.company}`}
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="w-4 h-4 ml-1"
+            className="w-4 h-4 ml-1 inline-block"
           >
             <path
               stroke-linecap="round"
@@ -47,7 +48,9 @@ export default function Position(props: Props) {
         </a>
         {/* <h2 className="text-lg font-semibold">{props.company}</h2> */}
         {/* <div className="text-sm text-white/50 my-2">{props.children}</div> */}
-        <div className="text-sm text-white/50 my-2">{props.children}</div>
+        <div className="text-xs leading-relaxed text-white/60 my-2">
+          {props.children}
+        </div>
       </div>
     </div>
   );
