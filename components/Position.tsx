@@ -13,38 +13,41 @@ interface Props {
 
 export default function Position(props: Props) {
   return (
-    <a href={props.url} className="group py-4 grid grid-cols-1 sm:grid-cols-4">
-      <div className="col-span-1">
-        <p className="text-xs/5 font-medium uppercase text-white/50 mr-2">
-          <span className="inline-block">{props.startDate}</span> -{" "}
-          <span className="inline-block">{props.endDate}</span>
-        </p>
+    <a href={props.url} className="group sm:flex">
+      <div className="tracking-tighter text-xs/5 font-medium uppercase text-white/50 shrink-0 mr-8">
+        <div className="inline-block">{props.startDate}</div>
+        <div className="inline">{" - "}</div>
+        <div className="inline-block">{props.endDate}</div>
       </div>
-      <div className="col-span-3 transition group-hover:translate-x-2">
-        <p
+      <div>
+        <div
           className="
                 text-sm 
                 text-white/90
                 font-medium 
                 transition
-                group-hover:text-blue-600"
+                group-hover:text-blue-600
+                "
         >
           {`${props.title} @ ${props.company}`}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="w-4 h-4 ml-1 inline-block"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="inline-block align-top w-5 h-5 ml-1"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              fillRule="evenodd"
+              d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+              clipRule="evenodd"
+            />
+            <path
+              fillRule="evenodd"
+              d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+              clipRule="evenodd"
             />
           </svg>
-        </p>
+        </div>
         <div className="text-xs leading-relaxed text-white/70 my-2">
           {props.children}
         </div>
