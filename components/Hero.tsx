@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header className="lg:sticky lg:top-0 lg:max-h-screen pt-20 flex flex-col p-6 justify-center md:items-center">
+    <header className="lg:sticky lg:top-0 lg:max-h-screen pt-20 flex flex-col p-6 justify-center">
       <div className="grow">
         <div className="flex items-center gap-x-4 my-2">
           <Image
