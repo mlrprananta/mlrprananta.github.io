@@ -1,4 +1,3 @@
-import Pill from "./Pill";
 import Position from "./Position";
 import Subheader from "./Subheader";
 
@@ -27,13 +26,7 @@ export default function Experience() {
           startDate="Jan 2022"
           endDate="Oct 2023"
           url="https://picnic.app/nl/"
-          skills={[
-            "Java 17",
-            "Spring Webflux",
-            "MongoDB",
-            "Kubernetes",
-            "Python",
-          ]}
+          skills={["Java", "Spring Webflux", "MongoDB", "Kubernetes", "Python"]}
         >
           <p className="my-2">
             Picnic is a fast-growing online grocery delivery scale-up which
@@ -100,7 +93,7 @@ export default function Experience() {
           </p>
           <p className="my-2">
             As an intern I developed an internal tool to visualize the load
-            paths on wings using sensor data recorded during flights.
+            paths on aircraft from sensor data recorded during flights.
           </p>
         </Position>
       </div>
