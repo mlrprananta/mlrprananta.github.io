@@ -42,9 +42,7 @@ export default function Position(props: Props) {
             <HiMiniArrowTopRightOnSquare className="inline align-text-top text-base ml-1"></HiMiniArrowTopRightOnSquare>
           </span>
         </a>
-        <div className="text-xs leading-relaxed text-white/70 my-2">
-          {props.children}
-        </div>
+        <div className="my-2">{props.children}</div>
         <SkillList skills={props.skills}></SkillList>
       </div>
     </div>

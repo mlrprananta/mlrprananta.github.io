@@ -13,10 +13,10 @@ export default function Projects() {
           skills={["TypeScript", "React", "Next.js", "Tailwind CSS"]}
         >
           <Paragraph>
-            My latest personal website built with Next.js and Tailwind CSS. This
-            little project was a good way to refresh my web development
-            fundamentals, and it also gave me the opportunity to learn more
-            about the latest frontend frameworks.
+            My latest personal website built with Next.js and Tailwind CSS. It
+            served as a refresher for web development fundamentals, while also
+            giving me the opportunity to learn more about the latest frontend
+            frameworks.
           </Paragraph>
         </Project>
       </div>
