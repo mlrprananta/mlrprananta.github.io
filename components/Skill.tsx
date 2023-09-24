@@ -56,7 +56,7 @@ export default function Skill({ name }: { name: string }) {
   const iconOnly = iconOnlySkills.includes(basename);
   const icon = getIcon(basename);
   return (
-    <span className="inline-block text-white/80 text-xs transform hover:text-white select-none">
+    <span className="inline-block text-white/80 text-xs transform hover:text-blue-600 ">
       {iconOnly ? "" : name}
       <span
         className={`inline-block align-top text-base ${
