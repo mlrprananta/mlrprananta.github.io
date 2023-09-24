@@ -42,7 +42,7 @@ export default function Hero() {
       <Subheader>About Me</Subheader>
       <p className="text-sm leading-normal tracking-normal font-normal text-white/70 my-2 md:max-w-lg">
         Passionate software engineer specialized in backend development, with
-        experience in e-commerce and customer-facing applications. 
+        experience in e-commerce and customer-facing applications.
       </p>
       <p className="text-sm leading-normal tracking-normal font-normal text-white/70 my-2 md:max-w-lg">
         An overview of relevant technologies I&apos;ve worked with:

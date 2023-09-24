@@ -15,7 +15,7 @@ interface Props {
 export default function Position(props: Props) {
   return (
     <div className="sm:flex">
-      <div className="tracking-tighter text-xs/5 font-medium uppercase text-white/50 shrink-0 mr-6">
+      <div className="tracking-tighter text-xs/5 font-medium uppercase text-white/50 shrink-0 mr-6 w-32">
         <div className="inline-block">
           <span>{`${props.startDate} — ${props.endDate}`}</span>
         </div>
