@@ -13,12 +13,11 @@ export default function Experience() {
           startDate="Nov 2023"
           endDate="Present"
           url="https://www.dpgmediagroup.com/nl-NL"
-          skills={["Java", "Kotlin", "AWS"]}
+          skills={["Kotlin", "Java", "AWS"]}
         >
           <Paragraph>
-            DPG Media is the largest media company in the Netherlands. Their
-            Selectives platform is a digital news delivery platform powering
-            dozens of mobile applications and websites.
+            The DPG Selectives platform is a digital news delivery platform
+            powering dozens of mobile applications and websites.
           </Paragraph>
         </Position>
         <Position
@@ -29,7 +28,7 @@ export default function Experience() {
           url="https://picnic.app/nl/"
           skills={[
             "Java",
-            "Spring Webflux",
+            "Spring WebFlux",
             "MongoDB",
             "Docker",
             "Kubernetes",
@@ -37,12 +36,12 @@ export default function Experience() {
           ]}
         >
           <Paragraph>
-            Picnic is a fast-growing online grocery delivery scale-up which
-            seeks to revolutionize the way people purchase groceries.
+            Picnic is a fast-growing online grocery delivery scale-up seeking to
+            revolutionize the way people buy groceries.
           </Paragraph>
           <Paragraph>
-            As a Java developer I developed new features end-to-end for the
-            customer-facing mobile app. I was Involved in all stages of the
+            At Picnic I developed new features end-to-end for the
+            customer-facing mobile app. I was involved in all stages of the
             software development lifecycle and contributed to several impactful
             projects.
           </Paragraph>
@@ -73,8 +72,7 @@ export default function Experience() {
         >
           <Paragraph>
             Netcompany is a global IT consultancy that specializes in providing
-            digital transformation, IT consulting, and software development
-            services.
+            digital transformation and software development services.
           </Paragraph>
           <Paragraph>
             As a fullstack developer I developed and implemented frontend
@@ -95,9 +93,8 @@ export default function Experience() {
           skills={["MATLAB"]}
         >
           <Paragraph>
-            The Netherlands Aerospace Centre (NLR) is an independent research
-            and technology organization that specializes in aerospace research
-            and development.
+            The Netherlands Aerospace Centre (NLR) is an independent aerospace
+            research and technology organization.
           </Paragraph>
           <Paragraph>
             As an intern I developed an internal tool to visualize the load

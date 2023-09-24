@@ -2,6 +2,24 @@ import profilePicture from "@/public/pfp.jpeg";
 import Image from "next/image";
 import Subheader from "./Subheader";
 import Socials from "./Socials";
+import SkillList from "./SkillList";
+
+const skills = [
+  "Java",
+  "TypeScript",
+  "Python",
+  "JavaScript",
+  "Spring",
+  "JUnit",
+  "Mockito",
+  "React",
+  "Node.js",
+  "Docker",
+  "Kubernetes",
+  "RabbitMQ",
+  "MongoDB",
+  "REST API",
+];
 
 export default function Hero() {
   return (
@@ -22,14 +40,19 @@ export default function Hero() {
         </div>
       </div>
       <Subheader>About Me</Subheader>
-      <p className="text-sm leading-relaxed tracking-normal font-normal text-white/70 my-2 md:max-w-xl">
+      <p className="text-sm leading-relaxed tracking-normal font-normal text-white/70 my-2 md:max-w-lg">
         Passionate software engineer specialized in backend development, with
-        experience in e-commerce and customer-facing applications.
+        experience in e-commerce and customer-facing applications. Having
+        dabbled in data science and speech technology during my studies, I am
+        now fully committed to the art and science of software engineering.
       </p>
-      <p className="text-sm leading-relaxed tracking-normal font-normal text-white/70 my-2 md:max-w-xl">
-        Having dabbled in data science and speech technology during my studies,
-        I am now fully commited to the art and science of software engineering.
+      <p className="text-sm leading-relaxed tracking-normal font-normal text-white/70 my-2 md:max-w-lg">
+        Here is an overview of relevant technologies I&apos;ve worked with:
       </p>
+      <div className="md:max-w-lg font-medium tracking-normal text-blue-200/80 my-4">
+        <SkillList skills={skills} scale="large"></SkillList>
+      </div>
+
       <Socials></Socials>
     </header>
   );

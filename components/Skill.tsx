@@ -3,7 +3,7 @@ import {
   SiAmazonaws,
   SiCsharp,
   SiDocker,
-  SiKotlin,
+  SiJavascript,
   SiKubernetes,
   SiMongodb,
   SiNextdotjs,
@@ -13,8 +13,9 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { TbBrandKotlin } from "react-icons/tb";
 
-const iconOnlySkills = ["C#", "TypeScript", "AWS"];
+const iconOnlySkills = ["C#", "TypeScript", "AWS", "JavaScript"];
 
 function getIcon(name: string) {
   switch (name) {
@@ -25,7 +26,7 @@ function getIcon(name: string) {
     case "MongoDB":
       return <SiMongodb></SiMongodb>;
     case "Spring":
-      return <SiSpring></SiSpring>;
+      return;
     case "Kubernetes":
       return <SiKubernetes></SiKubernetes>;
     case "React":
@@ -41,27 +42,39 @@ function getIcon(name: string) {
     case "Docker":
       return <SiDocker></SiDocker>;
     case "Kotlin":
-      return <SiKotlin></SiKotlin>;
+      return <TbBrandKotlin></TbBrandKotlin>;
     case "Tailwind":
       return <SiTailwindcss></SiTailwindcss>;
     case "Next.js":
       return <SiNextdotjs></SiNextdotjs>;
+    case "JavaScript":
+      return <SiJavascript></SiJavascript>;
     default:
       return;
   }
 }
 
-export default function Skill({ name }: { name: string }) {
+export default function Skill({
+  name,
+  scale = "small",
+}: {
+  name: string;
+  scale?: "small" | "large";
+}) {
   const basename = name.split(" ")[0];
   const iconOnly = iconOnlySkills.includes(basename);
   const icon = getIcon(basename);
   return (
-    <span className="inline-block font-normal tracking-normal text-blue-200/80 text-xs transform hover:text-white transition">
+    <span
+      className={`inline-block transform hover:text-white transition ${
+        scale === "small" ? "text-xs" : "text-sm"
+      }`}
+    >
       {iconOnly ? "" : name}
       <span
-        className={`inline-block align-top text-base ${
-          !iconOnly && icon ? "ml-1" : ""
-        }`}
+        className={`inline-block align-top ${
+          scale === "small" ? "text-base" : "text-xl"
+        } ${!iconOnly && icon ? "ml-1" : ""}`}
       >
         {icon}
       </span>

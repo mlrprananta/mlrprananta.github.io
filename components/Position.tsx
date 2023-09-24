@@ -30,7 +30,7 @@ export default function Position(props: Props) {
                 text-white/90
                 font-medium 
                 transition
-                hover:text-blue-600
+                hover:text-sky-600
                 "
         >
           {`${props.title} @ ${props.company.substring(
@@ -43,7 +43,9 @@ export default function Position(props: Props) {
           </span>
         </a>
         <div className="my-2">{props.children}</div>
-        <SkillList skills={props.skills}></SkillList>
+        <div className="font-medium tracking-normal text-blue-200/80 my-4">
+          <SkillList skills={props.skills} scale="small"></SkillList>
+        </div>
       </div>
     </div>
   );

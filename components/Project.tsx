@@ -37,7 +37,9 @@ export default function Project(props: Props) {
             <a className="underline" href={props.url}>GitHub</a>
         </div> */}
       </div>
-      <SkillList skills={props.skills}></SkillList>
+      <div className="font-medium tracking-normal text-blue-200/80 my-4">
+        <SkillList skills={props.skills} scale="small"></SkillList>
+      </div>
     </div>
   );
 }
