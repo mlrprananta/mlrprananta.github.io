@@ -6,9 +6,11 @@ import {
   SiKotlin,
   SiKubernetes,
   SiMongodb,
+  SiNextdotjs,
   SiPython,
   SiReact,
   SiSpring,
+  SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 
@@ -40,6 +42,10 @@ function getIcon(name: string) {
       return <SiDocker></SiDocker>;
     case "Kotlin":
       return <SiKotlin></SiKotlin>;
+    case "Tailwind":
+      return <SiTailwindcss></SiTailwindcss>;
+    case "Next.js":
+      return <SiNextdotjs></SiNextdotjs>;
     default:
       return;
   }
@@ -50,7 +56,7 @@ export default function Skill({ name }: { name: string }) {
   const iconOnly = iconOnlySkills.includes(basename);
   const icon = getIcon(basename);
   return (
-    <span className="inline-block text-white/50 text-xs transform hover:text-white">
+    <span className="inline-block text-white/80 text-xs transform hover:text-white select-none">
       {iconOnly ? "" : name}
       <span
         className={`inline-block align-top text-base ${
