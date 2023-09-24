@@ -12,18 +12,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-function showName(name: string) {
-  switch (name) {
-    case "C#":
-      return false;
-    case "TypeScript":
-      return false;
-    case "AWS":
-      return false;
-    default:
-      return true;
-  }
-}
+const iconOnlySkills = ["C#", "TypeScript", "AWS"];
 
 function getIcon(name: string) {
   switch (name) {
@@ -56,21 +45,20 @@ function getIcon(name: string) {
   }
 }
 
-export default function Pill({ name }: { name: string }) {
+export default function Skill({ name }: { name: string }) {
+  const basename = name.split(" ")[0];
+  const iconOnly = iconOnlySkills.includes(basename);
+  const icon = getIcon(basename);
   return (
-    <span className="inline-block text-white/50 text-xs">
-      {showName(name) ? name : ""}
+    <span className="inline-block text-white/50 text-xs transform hover:text-white">
+      {iconOnly ? "" : name}
       <span
-        className={`inline-block align-middle text-base ${
-          showName(name) && getIcon(name.split(" ")[0]) !== undefined
-            ? "ml-1"
-            : ""
+        className={`inline-block align-top text-base ${
+          !iconOnly && icon ? "ml-1" : ""
         }`}
       >
-        {getIcon(name.split(" ")[0])}
+        {icon}
       </span>
-
-      {/* <span className="mx-1">-</span> */}
     </span>
   );
 }

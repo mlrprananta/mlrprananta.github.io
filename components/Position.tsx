@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import Pill from "./Pill";
+import SkillList from "./SkillList";
 
 interface Props {
   company: string;
@@ -13,21 +13,23 @@ interface Props {
 
 export default function Position(props: Props) {
   return (
-    <a href={props.url} className="group sm:flex">
+    <div className="sm:flex">
       <div className="tracking-tighter text-xs/5 font-medium uppercase text-white/50 shrink-0 mr-6">
-        <div className="inline-block">{props.startDate}</div>
-        <div className="inline">{" — "}</div>
-        <div className="inline-block">{props.endDate}</div>
+        <div className="inline-block">
+            <span>{`${props.startDate} — ${props.endDate}`}</span>
+        </div>
       </div>
       <div>
-        <div
+        <a
+            href={props.url} 
           className="
-          tracking-tight
+                block
+                tracking-tight
                 text-sm 
                 text-white/90
                 font-medium 
                 transition
-                group-hover:text-blue-600
+                hover:text-blue-600
                 "
         >
           {`${props.title} @ ${props.company.substring(
@@ -54,25 +56,12 @@ export default function Position(props: Props) {
               />
             </svg>
           </span>
-        </div>
+        </a>
         <div className="text-xs leading-relaxed text-white/70 my-2">
           {props.children}
         </div>
-        <div className="">
-          {props.skills.map((skill, index) => {
-            return (
-              <>
-                <Pill key={skill} name={skill}></Pill>
-                {index !== props.skills.length - 1 ? (
-                  <span className="text-white/50 text-xs mx-2">·</span>
-                ) : (
-                  ""
-                )}
-              </>
-            );
-          })}
-        </div>
+        <SkillList skills={props.skills}></SkillList>
       </div>
-    </a>
+    </div>
   );
 }

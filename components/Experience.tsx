@@ -26,7 +26,14 @@ export default function Experience() {
           startDate="Jan 2022"
           endDate="Oct 2023"
           url="https://picnic.app/nl/"
-          skills={["Java", "Spring Webflux", "MongoDB", "Kubernetes", "Python"]}
+          skills={[
+            "Java",
+            "Spring Webflux",
+            "MongoDB",
+            "Docker",
+            "Kubernetes",
+            "Python",
+          ]}
         >
           <p className="my-2">
             Picnic is a fast-growing online grocery delivery scale-up which
