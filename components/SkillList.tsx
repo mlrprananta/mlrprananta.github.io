@@ -13,7 +13,15 @@ export default function SkillList({
         return (
           <span key={skill} className="inline-block select-none">
             <Skill name={skill} scale={scale}></Skill>
-            {index !== skills.length - 1 ? <span className="mx-2">·</span> : ""}
+            {index !== skills.length - 1 ? (
+              <span
+                className={`mx-2 ${scale === "small" ? "text-xs" : "text-sm"}`}
+              >
+                ·
+              </span>
+            ) : (
+              ""
+            )}
           </span>
         );
       })}
