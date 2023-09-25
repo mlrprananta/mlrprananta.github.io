@@ -23,7 +23,7 @@ export default function Skills() {
     <section id="skills" className="w-full p-6">
       <Subheader>Relevant Skills</Subheader>
       <div className="md:max-w-lg font-medium tracking-normal text-blue-200/80 my-4">
-        <SkillList skills={skills} scale="large"></SkillList>
+        <SkillList skills={skills} textSize="text-sm"></SkillList>
       </div>
     </section>
   );

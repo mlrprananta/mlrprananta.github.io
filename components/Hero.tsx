@@ -3,6 +3,7 @@ import Image from "next/image";
 import Subheader from "./Subheader";
 import Socials from "./Socials";
 import SkillList from "./SkillList";
+import HeroParagraph from "./HeroParagraph";
 
 const skills = [
   "Java",
@@ -40,19 +41,17 @@ export default function Hero() {
         </div>
       </div>
       <Subheader>About Me</Subheader>
-      <p className="text-sm leading-normal tracking-normal font-normal text-white/70 my-2 md:max-w-lg">
+      <HeroParagraph>
         Passionate software engineer specialized in backend development, with
         experience in e-commerce and customer-facing applications.
-      </p>
-      <p className="text-sm leading-normal tracking-normal font-normal text-white/70 my-2 md:max-w-lg">
+      </HeroParagraph>
+      <HeroParagraph>
         An overview of relevant technologies I&apos;ve worked with:
-      </p>
+      </HeroParagraph>
       <div className="md:max-w-lg font-medium tracking-normal text-blue-200/80 my-4">
-        <SkillList skills={skills} scale="large"></SkillList>
+        <SkillList skills={skills} textSize="text-sm"></SkillList>
       </div>
-      <p className="text-sm leading-normal tracking-normal font-normal text-white/70 my-2 md:max-w-lg">
-        Let&apos;s stay in touch!
-      </p>
+      <HeroParagraph>Let&apos;s stay in touch!</HeroParagraph>
       <Socials></Socials>
     </header>
   );

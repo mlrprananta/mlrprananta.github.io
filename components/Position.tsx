@@ -44,7 +44,7 @@ export default function Position(props: Props) {
         </a>
         <div className="my-2">{props.children}</div>
         <div className="font-medium tracking-normal text-blue-200/80 my-4">
-          <SkillList skills={props.skills} scale="small"></SkillList>
+          <SkillList skills={props.skills} textSize="text-xs"></SkillList>
         </div>
       </div>
     </div>

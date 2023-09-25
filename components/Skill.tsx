@@ -54,27 +54,34 @@ function getIcon(name: string) {
   }
 }
 
+function translateTextSize(textSize: string) {
+  switch (textSize) {
+    case "text-sm":
+      return "text-xl";
+    default:
+      return "text-base";
+  }
+}
+
 export default function Skill({
   name,
-  scale = "small",
+  textSize,
 }: {
   name: string;
-  scale?: "small" | "large";
+  textSize: "text-xs" | "text-sm";
 }) {
   const basename = name.split(" ")[0];
   const iconOnly = iconOnlySkills.includes(basename);
   const icon = getIcon(basename);
   return (
     <span
-      className={`inline-block transform hover:text-white transition ${
-        scale === "small" ? "text-xs" : "text-sm"
-      }`}
+      className={`inline-block transform hover:text-white transition ${textSize}`}
     >
       {iconOnly ? "" : name}
       <span
-        className={`inline-block align-top ${
-          scale === "small" ? "text-base" : "text-xl"
-        } ${!iconOnly && icon ? "ml-1" : ""}`}
+        className={`inline-block align-top ${translateTextSize(textSize)} ${
+          !iconOnly && icon ? "ml-1" : ""
+        }`}
       >
         {icon}
       </span>
