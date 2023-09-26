@@ -15,11 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="scroll-smooth antialiased select-none static" lang="en">
-      <body className={`${inter.className} bg-slate-900 `}>
-        {/* <div className="fixed mix-blend-normal -top-2/3 -left-1/3 w-2/3 h-full rounded-full bg-gradient-to-r from-emerald-800 to-indigo-800 -z-30 blur-3xl"></div> */}
-        <div className="fixed mix-blend-normal -top-3/4 -left-1/4 w-full h-full rounded-full bg-gradient-to-l from-emerald-800 from-20% to-slate-700 -z-30 blur-3xl"></div>
-        <div className="fixed mix-blend-normal -top-3/4 left-1/2 w-2/3 h-full rounded-full bg-gradient-to-r from-emerald-800 from-30% to-indigo-800 -z-30 blur-3xl"></div>
+    <html className="scroll-smooth antialiased select-none" lang="en">
+      <body className={`${inter.className} bg-slate-950`}>
+        <div className="absolute lg:fixed mix-blend-normal -top-1/4 left-1/4 lg:left-0 w-1/2 lg:w-2/3 h-2/3 rounded-b-full bg-gradient-to-t from-emerald-800/30 to-emerald-800/50 -z-30 blur-3xl"></div>
+        <div className="absolute lg:fixed mix-blend-normal -top-1/4 inset-0 w-full h-full bg-gradient-to-t from-slate-800/30 to-indigo-700/30 -z-40 blur-3xl"></div>
         {children}
       </body>
     </html>
