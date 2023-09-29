@@ -32,7 +32,12 @@ export default function Experience() {
             "MongoDB",
             "Docker",
             "Kubernetes",
+            "RabbitMQ",
             "Python",
+            "Cucumber",
+            "REST API",
+            "CI/CD",
+            "Microservices",
           ]}
         >
           <Paragraph>
@@ -40,10 +45,10 @@ export default function Experience() {
             revolutionize the way people buy groceries.
           </Paragraph>
           <Paragraph>
-            At Picnic I developed new features end-to-end for the
-            customer-facing mobile app. I was involved in all stages of the
-            software development lifecycle and contributed to several impactful
-            projects.
+            Developed new features end-to-end for the customer-facing mobile app
+            in collaboration with various business stakeholders. Involved in all
+            stages of the software development lifecycle and contributed to
+            several impactful projects.
           </Paragraph>
           {/* <p className="my-2">
            I led the development of email-based 2FA from implementation to
@@ -75,9 +80,9 @@ export default function Experience() {
             digital transformation and software development services.
           </Paragraph>
           <Paragraph>
-            As a fullstack developer I developed and implemented frontend
-            components and contributed to backend applications for ongoing web
-            application projects commisioned by government organizations.
+            Built frontend components and contributed to backend applications
+            for ongoing web application projects commisioned by government
+            organizations.
           </Paragraph>
           {/* <p className="my-2">
           I also built an internal tool to synchronize items between two issue
@@ -97,8 +102,7 @@ export default function Experience() {
             research and technology organization.
           </Paragraph>
           <Paragraph>
-            As an intern I developed an internal tool to visualize the load
-            paths on aircraft given sensor data recorded during flights.
+            Developed a visualization tool for aeroelastic analysis.
           </Paragraph>
         </Position>
       </div>

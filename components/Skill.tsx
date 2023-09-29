@@ -2,12 +2,14 @@ import { FaJava, FaNodeJs } from "react-icons/fa6";
 import {
   SiAmazonaws,
   SiCsharp,
+  SiCucumber,
   SiDocker,
   SiJavascript,
   SiKubernetes,
   SiMongodb,
   SiNextdotjs,
   SiPython,
+  SiRabbitmq,
   SiReact,
   SiSpring,
   SiTailwindcss,
@@ -26,7 +28,7 @@ function getIcon(name: string) {
     case "MongoDB":
       return <SiMongodb></SiMongodb>;
     case "Spring":
-      return;
+      return <SiSpring></SiSpring>;
     case "Kubernetes":
       return <SiKubernetes></SiKubernetes>;
     case "React":
@@ -49,6 +51,10 @@ function getIcon(name: string) {
       return <SiNextdotjs></SiNextdotjs>;
     case "JavaScript":
       return <SiJavascript></SiJavascript>;
+    case "RabbitMQ":
+      return <SiRabbitmq></SiRabbitmq>;
+    case "Cucumber":
+      return <SiCucumber></SiCucumber>;
     default:
       return;
   }

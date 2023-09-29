@@ -17,9 +17,10 @@ const skills = [
   "Node.js",
   "Docker",
   "Kubernetes",
-  "RabbitMQ",
   "MongoDB",
   "REST API",
+  "CI/CD",
+  "Microservices",
 ];
 
 export default function Hero() {
@@ -42,11 +43,12 @@ export default function Hero() {
       </div>
       <Subheader>About Me</Subheader>
       <HeroParagraph>
-        Passionate software engineer specialized in backend development, with
-        experience in e-commerce and customer-facing applications.
+        Product-minded software engineer specialized in backend development,
+        with domain knowledge in e-commerce and customer-facing applications.
       </HeroParagraph>
       <HeroParagraph>
-        An overview of relevant technologies I&apos;ve worked with:
+        An overview of relevant technologies and practices I&apos;ve worked
+        with:
       </HeroParagraph>
       <div className="md:max-w-lg font-medium tracking-normal text-blue-200/80 my-4">
         <SkillList skills={skills} textSize="text-sm"></SkillList>
