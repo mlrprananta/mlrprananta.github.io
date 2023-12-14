@@ -1,4 +1,4 @@
-import profilePicture from "@/public/pfp.jpeg";
+import profilePicture from "@/public/pfp.jpg";
 import Image from "next/image";
 import Subheader from "./Subheader";
 import Socials from "./Socials";

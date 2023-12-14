@@ -13,7 +13,15 @@ export default function Experience() {
           startDate="Nov 2023"
           endDate="Present"
           url="https://www.dpgmediagroup.com/nl-NL"
-          skills={["Kotlin", "Java", "AWS"]}
+          skills={[
+            "Kotlin",
+            "Java",
+            "TypeScript",
+            "AWS",
+            "Spring Boot",
+            "Docker",
+            "Microservices",
+          ]}
         >
           <Paragraph>
             The DPG Selectives platform is a digital news delivery platform
@@ -46,9 +54,9 @@ export default function Experience() {
           </Paragraph>
           <Paragraph>
             Developed new features end-to-end for the customer-facing mobile app
-            in collaboration with various business stakeholders. Involved in all
-            stages of the software development lifecycle and contributed to
-            several impactful projects.
+            together with a cross-functional team and various business
+            stakeholders. Involved in all stages of the software development
+            lifecycle and contributed to several impactful projects.
           </Paragraph>
           {/* <p className="my-2">
            I led the development of email-based 2FA from implementation to
