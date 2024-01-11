@@ -17,22 +17,26 @@ export default function Experience() {
             "Kotlin",
             "Java",
             "TypeScript",
-            "AWS",
             "Spring Boot",
+            "MongoDB",
             "Docker",
+            "AWS",
+            "REST API",
+            "CI/CD",
             "Microservices",
+            "DevOps"
           ]}
         >
           <Paragraph>
-            The DPG Selectives platform is a digital news delivery platform
-            powering dozens of mobile applications and websites.
+            The DPG Selectives platform serves digital news content to millions of readers and
+            enables editorial teams from eight different newspaper brands to create and manage news content.
           </Paragraph>
         </Position>
         <Position
           company="Picnic Technologies"
           title="Java Developer"
           startDate="Jan 2022"
-          endDate="Oct 2023"
+          endDate="July 2023"
           url="https://picnic.app/nl/"
           skills={[
             "Java",
@@ -42,7 +46,6 @@ export default function Experience() {
             "Kubernetes",
             "RabbitMQ",
             "Python",
-            "Cucumber",
             "REST API",
             "CI/CD",
             "Microservices",

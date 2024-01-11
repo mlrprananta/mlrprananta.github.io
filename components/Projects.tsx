@@ -5,7 +5,7 @@ import Subheader from "./Subheader";
 export default function Projects() {
   return (
     <section id="projects" className="w-full p-6 mb-8">
-      <Subheader>Projects</Subheader>
+      <Subheader>Recent Projects</Subheader>
       <div className="md:max-w-xl flex flex-col gap-8">
         <Project
           title="mlrprananta.github.io"
@@ -13,10 +13,8 @@ export default function Projects() {
           skills={["TypeScript", "React", "Next.js", "Tailwind CSS"]}
         >
           <Paragraph>
-            My latest personal website built with Next.js and Tailwind CSS. It
-            served as a refresher for web development fundamentals, while also
-            giving me the opportunity to learn more about the latest frontend
-            frameworks.
+            My latest personal website built with Next.js and Tailwind CSS. 
+            A nice refresher for frontend web development plus a learning opportunity for the latest trending frontend frameworks.
           </Paragraph>
         </Project>
       </div>
