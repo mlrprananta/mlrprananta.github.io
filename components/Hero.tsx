@@ -8,11 +8,10 @@ import HeroParagraph from "./HeroParagraph";
 const skills = [
   "Java",
   "TypeScript",
+  "Kotlin",
   "Python",
   "JavaScript",
-  "Spring",
-  "JUnit",
-  "Mockito",
+  "Spring Boot",
   "React",
   "Node.js",
   "Docker",
@@ -21,6 +20,8 @@ const skills = [
   "REST API",
   "CI/CD",
   "Microservices",
+  "Design Patterns",
+  "Software Architecture",
 ];
 
 export default function Hero() {

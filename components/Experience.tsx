@@ -14,17 +14,17 @@ export default function Experience() {
           endDate="Present"
           url="https://www.dpgmediagroup.com/nl-NL"
           skills={[
-            "Kotlin",
             "Java",
-            "TypeScript",
             "Spring Boot",
             "MongoDB",
             "Docker",
+            "Kotlin",
+            "TypeScript",
+            "Amazon ECS",
             "AWS",
             "REST API",
             "CI/CD",
-            "Microservices",
-            "DevOps"
+            "Microservices"
           ]}
         >
           <Paragraph>
@@ -40,15 +40,14 @@ export default function Experience() {
           url="https://picnic.app/nl/"
           skills={[
             "Java",
-            "Spring WebFlux",
+            "Spring Boot",
             "MongoDB",
             "Docker",
             "Kubernetes",
             "RabbitMQ",
             "Python",
             "REST API",
-            "CI/CD",
-            "Microservices",
+            "CI/CD"
           ]}
         >
           <Paragraph>
@@ -100,7 +99,7 @@ export default function Experience() {
               tracking systems, reducing the manual workload for end-users.
           </p> */}
         </Position>
-        <Position
+        {/* <Position
           company="Netherlands Aerospace Centre"
           title="Intern"
           startDate="Apr 2018"
@@ -115,7 +114,7 @@ export default function Experience() {
           <Paragraph>
             Developed a visualization tool for aeroelastic analysis.
           </Paragraph>
-        </Position>
+        </Position> */}
       </div>
     </section>
   );
