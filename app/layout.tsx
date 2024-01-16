@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth antialiased select-none" lang="en">
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-XJ72ZYCPR2"></Script>
-      <Script>
+      <Script id="gtag">
         {
           `  
           window.dataLayer = window.dataLayer || [];
