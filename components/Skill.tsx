@@ -57,7 +57,7 @@ function getIcon(name: string) {
     case "Cucumber":
       return <SiCucumber></SiCucumber>;
     case "Amazon":
-      return <SiAmazonecs/>;
+      return <SiAmazonecs />;
     default:
       return;
   }

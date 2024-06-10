@@ -9,32 +9,38 @@ export default function Experience() {
       <div className="md:max-w-xl flex flex-col gap-8">
         <Position
           company="DPG Media"
-          title="Java / Kotlin Developer"
+          title="Software Engineer"
           startDate="Nov 2023"
           endDate="Present"
           url="https://www.dpgmediagroup.com/nl-NL"
           skills={[
             "Java",
+            "TypeScript",
+            "Kotlin",
             "Spring Boot",
             "MongoDB",
             "Docker",
-            "Kotlin",
-            "TypeScript",
-            "Amazon ECS",
             "AWS",
             "REST API",
             "CI/CD",
-            "Microservices"
+            "Microservices",
           ]}
         >
           <Paragraph>
-            The DPG Selectives platform serves digital news content to millions of readers and
-            enables editorial teams from eight different newspaper brands to create and manage news content.
+            DPG Media is a leading media company operating in Belgium and the
+            Netherlands, involved in newspapers, magazines, television, radio,
+            and digital media.
+          </Paragraph>
+          <Paragraph>
+            Enhanced and maintained a digital news platform that serves content
+            to readers via web and mobile apps, and empowers eight different
+            newspapers (such as de Volkskrant) with tools to create and manage
+            content.
           </Paragraph>
         </Position>
         <Position
           company="Picnic Technologies"
-          title="Java Developer"
+          title="Software Engineer"
           startDate="Jan 2022"
           endDate="July 2023"
           url="https://picnic.app/nl/"
@@ -47,7 +53,7 @@ export default function Experience() {
             "RabbitMQ",
             "Python",
             "REST API",
-            "CI/CD"
+            "CI/CD",
           ]}
         >
           <Paragraph>
@@ -55,10 +61,9 @@ export default function Experience() {
             revolutionize the way people buy groceries.
           </Paragraph>
           <Paragraph>
-            Developed new features end-to-end for the customer-facing mobile app
-            together with a cross-functional team and various business
-            stakeholders. Involved in all stages of the software development
-            lifecycle and contributed to several impactful projects.
+            Collaborated with a cross-functional team and various business
+            stakeholders to develop new end-to-end features for the
+            customer-facing mobile app.
           </Paragraph>
           {/* <p className="my-2">
            I led the development of email-based 2FA from implementation to
@@ -72,7 +77,7 @@ export default function Experience() {
         </Position>
         <Position
           company="Netcompany"
-          title="Software Developer"
+          title="Consultant"
           startDate="Dec 2019"
           endDate="Dec 2021"
           url="https://netcompany.com/"
@@ -90,9 +95,8 @@ export default function Experience() {
             digital transformation and software development services.
           </Paragraph>
           <Paragraph>
-            Built frontend components and contributed to backend applications
-            for ongoing web application projects commisioned by government
-            organizations.
+            Contributed to both frontend and backend development for projects
+            commisioned by the public sector.
           </Paragraph>
           {/* <p className="my-2">
           I also built an internal tool to synchronize items between two issue
