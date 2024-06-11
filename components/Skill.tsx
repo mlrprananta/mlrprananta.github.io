@@ -52,8 +52,6 @@ function getIcon(name: string) {
       return <SiNextdotjs></SiNextdotjs>;
     case "JavaScript":
       return <SiJavascript></SiJavascript>;
-    case "RabbitMQ":
-      return <SiRabbitmq></SiRabbitmq>;
     case "Cucumber":
       return <SiCucumber></SiCucumber>;
     case "Amazon":

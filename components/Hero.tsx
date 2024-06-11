@@ -9,7 +9,6 @@ const skills = [
   "Java",
   "TypeScript",
   "Kotlin",
-  "JavaScript",
   "Spring Boot",
   "MongoDB",
   "AWS",
