@@ -32,10 +32,10 @@ export default function Experience() {
             and digital media.
           </Paragraph>
           <Paragraph>
-            Enhanced and maintained a digital news platform that serves content
-            to readers via web and mobile apps, and empowers eight different
-            newspapers (such as de Volkskrant) with tools to create and manage
-            content.
+            As a software engineer I delivered new features and maintained the (AWS) 
+            infrastructure of a digital news platform serving content
+            to web and mobile apps, and powering content management tools for 
+            brands such as de Volkskrant and Parool.
           </Paragraph>
         </Position>
         <Position
@@ -61,7 +61,7 @@ export default function Experience() {
             revolutionize the way people buy groceries.
           </Paragraph>
           <Paragraph>
-            Collaborated with a cross-functional team and various business
+            As a software engineer I collaborated with a cross-functional team and various business
             stakeholders to develop new end-to-end features for the
             customer-facing mobile app.
           </Paragraph>
@@ -95,7 +95,7 @@ export default function Experience() {
             digital transformation and software development services.
           </Paragraph>
           <Paragraph>
-            Contributed to both frontend and backend development for projects
+            As a consultant I contributed to both frontend and backend development for projects
             commisioned by the public sector.
           </Paragraph>
           {/* <p className="my-2">

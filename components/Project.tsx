@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { HiLink, HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
+import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import SkillList from "./SkillList";
 
 interface Props {

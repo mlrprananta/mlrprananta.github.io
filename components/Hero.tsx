@@ -43,12 +43,11 @@ export default function Hero() {
       </div>
       <Subheader>About Me</Subheader>
       <HeroParagraph>
-        Product-minded software engineer specialized in backend development,
+        Product-minded software engineer specialized in backend web development,
         with domain knowledge in e-commerce and customer-facing applications.
       </HeroParagraph>
       <HeroParagraph>
-        An overview of relevant technologies and practices I&apos;ve worked
-        with:
+        I have firsthand knowledge of the following technologies and practices:
       </HeroParagraph>
       <div className="md:max-w-lg font-medium tracking-normal text-blue-200/80 my-4">
         <SkillList skills={skills} textSize="text-sm"></SkillList>
